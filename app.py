@@ -48,10 +48,15 @@ def add():
     test3=int(test1)+int(test2)
     return '''<h1>My result is :{}/<h1>'''.format(test3)
 """
-
+"""
 if __name__ == '__main__':
     #app.run()
     port = int(os.getenv("PORT"))
     host = '0.0.0.0'
     httpd = simple_server.make_server(host=host, port=port, app=app)
     httpd.serve_forever()
+
+"""
+if __name__ == '__main__':
+    #app.run()
+    app.run(debug=True)
